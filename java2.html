@@ -1,0 +1,37 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <h2>JAVA SCRIPT CLASS</h2>
+        <P id="DEMO"></P>
+        <P id="DEMO2"></P>
+        <script>
+            class student{
+                constructor(fname,lname,birthyear){
+                    this.fname=fname;
+                    this.lname=lname;
+                    this.birthyear=birthyear;
+                }
+            age(x){
+                return x-this.birthyear;
+            }
+                
+            fullname()
+            {
+                return this.fname+"  "+this.lname;
+            }
+            }
+            let date=new Date();
+                return date.getFullYear()-this.birthyear;
+            
+            student1=new student("ABISH","RAVI",2021);
+            student2=new student("SHESHAN","RAJa",2018);
+            document.getElementById('DEMO').innerHTML=student1.fullname()+""+" ,HIS AGE IS "+student1.age(year);
+            document.getElementById('DEMO2').innerHTML=student2.fullname()+""+" ,HIS AGE IS"+student2.age(year);
+
+        </script>
+</body>
+</html>
